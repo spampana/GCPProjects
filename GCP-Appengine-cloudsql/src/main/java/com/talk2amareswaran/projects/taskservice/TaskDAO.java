@@ -11,6 +11,6 @@ public class TaskDAO {
 	JdbcTemplate jdbcTemplate;
 	
 	public String getTaskNameById(String taskid) {
-		return jdbcTemplate.queryForObject("SELECT TASK_NAME FROM TASK WHERE ID=?", new Object[] {taskid},String.class);
+		return jdbcTemplate.queryForObject("select task_name from task where id=?", new Object[] {taskid},String.class);
 	}
 }
