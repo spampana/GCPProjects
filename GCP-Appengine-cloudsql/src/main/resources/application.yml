@@ -1,6 +1,8 @@
 spring:
   application:
     name: taskservice
+  profiles:
+    active: production
   datasource: 
     driverClassName: com.mysql.jdbc.Driver
     url: "jdbc:mysql://google/taskservice?cloudSqlInstance=springboot-cloudsql-mysql:us-central1:springboot-cloudsql&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=root&password=root"
