@@ -1,8 +1,6 @@
 spring:
   application:
     name: taskservice
-  profiles:
-    active: production
 server:
   port: 8080
   datasource: 
