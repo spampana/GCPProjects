@@ -27,7 +27,9 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-jdbc')
-	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-web'){
+	 exclude module: "spring-boot-starter-tomcat"
+	}
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile group: 'com.google.cloud.sql', name: 'mysql-socket-factory', version: '1.0.4'
